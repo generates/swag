@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from '@stitches/react'
+import Link from 'next/link'
 import {
   HiOutlineUserCircle
 } from 'react-icons/hi'
@@ -31,13 +32,15 @@ export default function MenuPage () {
 
         <div className={css({ marginRight: '1em' })()}>
           <Menu trigger="Menu">
-            <StyledMenuItem>
+            <Link href="/">
+              <StyledMenuItem>
 
-              <HiOutlineUserCircle className={navIcon} />
+                <HiOutlineUserCircle className={navIcon} />
 
-              My Profile
+                Home
 
-            </StyledMenuItem>
+              </StyledMenuItem>
+            </Link>
           </Menu>
         </div>
 
@@ -55,7 +58,9 @@ export default function MenuPage () {
       })()}>
 
         <div className={css({ marginRight: '1em' })()}>
-          <Menu trigger={<Button primary>Actions</Button>}>
+          <Menu trigger={({ toggle }) => (
+            <Button primary onClick={() => toggle()}>Actions</Button>
+          )}>
             <StyledMenuItem>
 
               <HiOutlineUserCircle className={navIcon} />
