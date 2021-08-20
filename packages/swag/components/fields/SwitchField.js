@@ -46,7 +46,7 @@ export default function SwitchField (props) {
 
   return (
     <StyledDiv
-      css={merge({ display: 'flex' }, css.wrapper)}
+      css={merge({ display: 'inline-flex' }, css.wrapper)}
       onClick={() => {
         const newState = !isOn
         setIsOn(newState)
