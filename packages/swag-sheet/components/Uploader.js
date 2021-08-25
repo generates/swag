@@ -31,22 +31,36 @@ export default function Uploader (props) {
     const [file] = files
     if (file) {
       setFilename(file.name)
-      Papa.parse(
-        file,
-        merge(
-          {
-            header: true,
-            worker: true,
-            skipEmptyLines: true,
-            complete (results) {
-              onData(results.data)
-              setData(results.data)
-              setIsLoading(false)
-            }
-          },
-          props.parse
-        )
-      )
+
+      // Call onFiles callback with the files selected and use the return value
+      // to determine whether the files should be parsed.
+      let shouldParse = true
+      if (props.onFiles) shouldParse = props.onFiles(files)
+
+      if (shouldParse) {
+        let data = []
+        for (const file of files) {
+          // Parse the file using PapaParse.
+          Papa.parse(
+            file,
+            merge(
+              {
+                header: true,
+                worker: true,
+                skipEmptyLines: true,
+                complete (results) {
+                  // Add the parsed data to the data that will be used.
+                  data = data.concat(results.data)
+                }
+              },
+              props.parse
+            )
+          )
+        }
+        onData(data)
+        setData(data)
+        setIsLoading(false)
+      }
     }
   }
 
