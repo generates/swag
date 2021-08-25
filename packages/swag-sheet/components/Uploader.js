@@ -39,7 +39,7 @@ export default function Uploader (props) {
 
       if (shouldParse) {
         let data = []
-        for (const file of files) {
+        for (const [index, file] of files.entries()) {
           // Parse the file using PapaParse.
           Papa.parse(
             file,
@@ -51,15 +51,17 @@ export default function Uploader (props) {
                 complete (results) {
                   // Add the parsed data to the data that will be used.
                   data = data.concat(results.data)
+                  if (files.length === index + 1) {
+                    onData(data)
+                    setData(data)
+                    setIsLoading(false)
+                  }
                 }
               },
               props.parse
             )
           )
         }
-        onData(data)
-        setData(data)
-        setIsLoading(false)
       }
     }
   }

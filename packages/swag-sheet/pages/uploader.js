@@ -13,6 +13,7 @@ export default function HomePage () {
 
       <div>
         <Uploader
+          onData={data => console.log('onData', data)}
           onContinue={data => console.log(data)}
           onUpdateCell={(ctx, value) => {
             ctx.setCss({ backgroundColor: '#FEE2E2' })

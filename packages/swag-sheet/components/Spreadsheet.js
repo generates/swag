@@ -197,7 +197,7 @@ export default function Spreadsheet (props) {
 
   return (
     <Wrapper css={props.css?.wrapper}>
-      {columns.length && (
+      {columns.length > 0 && (
         <StyledTable {...getTableProps()} css={props.css?.table}>
           <thead>
             {headerGroups.map(headerGroup => {
