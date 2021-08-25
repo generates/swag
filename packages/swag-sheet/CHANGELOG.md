@@ -1,5 +1,13 @@
 # @generates/swag-sheet
 
+## 0.0.45
+
+### Patch Changes
+
+- f035671: Adding onFiles callback to Uploader component
+- Updated dependencies [36a5752]
+  - @generates/swag@0.0.28
+
 ## 0.0.44
 
 ### Patch Changes
