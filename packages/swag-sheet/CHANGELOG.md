@@ -1,5 +1,11 @@
 # @generates/swag-sheet
 
+## 0.0.46
+
+### Patch Changes
+
+- c31acf9: Fixing parsing/onData
+
 ## 0.0.45
 
 ### Patch Changes
