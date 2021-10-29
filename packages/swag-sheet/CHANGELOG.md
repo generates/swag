@@ -1,5 +1,11 @@
 # @generates/swag-sheet
 
+## 0.0.47
+
+### Patch Changes
+
+- a17bd81: Removing accidentally added deps
+
 ## 0.0.46
 
 ### Patch Changes
