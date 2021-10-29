@@ -1,5 +1,11 @@
 # @generates/swag
 
+## 0.0.29
+
+### Patch Changes
+
+- a7156a4: Making some deps optional
+
 ## 0.0.28
 
 ### Patch Changes
