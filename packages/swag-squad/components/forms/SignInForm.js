@@ -4,7 +4,7 @@ import {
   PasswordField,
   SwitchField,
   LoadingButton,
-  StyledDiv,
+  StyledEl,
   StyledLink
 } from '@generates/swag'
 import StyledForm from '../styled/StyledForm.js'
@@ -41,7 +41,7 @@ export default function SignInForm (props) {
         required
       />
 
-      <StyledDiv css={{ display: 'flex', alignItems: 'center' }}>
+      <StyledEl css={{ display: 'flex', alignItems: 'center' }}>
 
         {showRememberMe && (
           <div>
@@ -55,11 +55,11 @@ export default function SignInForm (props) {
           </div>
         )}
 
-        <StyledDiv css={{ marginLeft: 'auto' }}>
+        <StyledEl css={{ marginLeft: 'auto' }}>
           {forgotPasswordLink}
-        </StyledDiv>
+        </StyledEl>
 
-      </StyledDiv>
+      </StyledEl>
 
       <div>
         <LoadingButton

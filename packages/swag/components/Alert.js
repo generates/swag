@@ -1,6 +1,6 @@
 import React from 'react'
 import { HiX } from 'react-icons/hi'
-import StyledDiv from './styled/StyledDiv.js'
+import StyledEl from './styled/StyledEl.js'
 import StyledButton from './styled/StyledButton.js'
 import transition from '../styles/transition.js'
 
@@ -47,14 +47,14 @@ export default function Alert (props) {
   )
 
   return (
-    <StyledDiv css={css} ref={ref} data-alert={props.level}>
+    <StyledEl css={css} ref={ref} data-alert={props.level}>
 
-      <StyledDiv css={{ padding: '.5em' }}>
+      <StyledEl css={{ padding: '.5em' }}>
         {props.children}
-      </StyledDiv>
+      </StyledEl>
 
       {props.onClose && (
-        <StyledDiv css={{ marginLeft: 'auto' }}>
+        <StyledEl css={{ marginLeft: 'auto' }}>
           <StyledButton
             type="button"
             css={{
@@ -94,9 +94,9 @@ export default function Alert (props) {
           >
             <HiX aria-hidden="true" />
           </StyledButton>
-        </StyledDiv>
+        </StyledEl>
       )}
 
-    </StyledDiv>
+    </StyledEl>
   )
 }

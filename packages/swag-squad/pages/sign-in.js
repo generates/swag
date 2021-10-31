@@ -3,7 +3,7 @@ import { styled } from '@stitches/react'
 import { useForm } from 'react-hook-form'
 import Page from '../components/app/Page.js'
 import SignInForm from '../components/forms/SignInForm.js'
-import { Alert, StyledDiv } from '@generates/swag'
+import { Alert, StyledEl } from '@generates/swag'
 
 const HeadingTwo = styled('h2')
 
@@ -56,9 +56,9 @@ export default function SignInPage () {
           }}
         >
 
-          <StyledDiv css={{ fontWeight: '500' }}>
+          <StyledEl css={{ fontWeight: '500' }}>
             {successMessage}
-          </StyledDiv>
+          </StyledEl>
 
           <pre>
             <code>

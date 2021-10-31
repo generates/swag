@@ -2,7 +2,7 @@ import React from 'react'
 import { merge } from '@generates/merger'
 import StyledLabel from '../styled/StyledLabel.js'
 import StyledSelect from '../styled/StyledSelect.js'
-import StyledDiv from '../styled/StyledDiv.js'
+import StyledEl from '../styled/StyledEl.js'
 import Feedback from '../Feedback.js'
 
 export default function SelectField (props) {
@@ -29,7 +29,7 @@ export default function SelectField (props) {
   )
 
   return (
-    <StyledDiv css={css?.wrapper}>
+    <StyledEl css={css?.wrapper}>
 
       {typeof label === 'string'
         ? (
@@ -50,6 +50,6 @@ export default function SelectField (props) {
         level={props.feedback && 'error'}
       />
 
-    </StyledDiv>
+    </StyledEl>
   )
 }

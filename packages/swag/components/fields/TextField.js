@@ -2,7 +2,7 @@ import React from 'react'
 import { merge } from '@generates/merger'
 import StyledLabel from '../styled/StyledLabel.js'
 import StyledInput from '../styled/StyledInput.js'
-import StyledDiv from '../styled/StyledDiv.js'
+import StyledEl from '../styled/StyledEl.js'
 import Feedback from '../Feedback.js'
 
 export default function TextField (props) {
@@ -29,7 +29,7 @@ export default function TextField (props) {
   )
 
   return (
-    <StyledDiv css={css?.wrapper}>
+    <StyledEl css={css?.wrapper}>
 
       {typeof label === 'string'
         ? (
@@ -51,6 +51,6 @@ export default function TextField (props) {
         level={props.feedback && 'error'}
       />
 
-    </StyledDiv>
+    </StyledEl>
   )
 }

@@ -7,7 +7,7 @@ import {
 } from '@headlessui/react'
 import { usePopper } from 'react-popper'
 import Button from './buttons/Button.js'
-import StyledDiv from './styled/StyledDiv.js'
+import StyledEl from './styled/StyledEl.js'
 
 export default function Menu (props) {
   const [referenceElement, setReferenceElement] = React.useState()
@@ -43,7 +43,7 @@ export default function Menu (props) {
           <>
 
             <Popover.Button
-              as={props.trigger === 'string' ? Button : StyledDiv}
+              as={props.trigger === 'string' ? Button : StyledEl}
               ref={setReferenceElement}
               css={merge({ cursor: 'pointer' }, props.css?.button)}
               {...props.button}

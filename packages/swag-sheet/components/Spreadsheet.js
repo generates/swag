@@ -1,7 +1,7 @@
 import React from 'react'
 import { styled } from '@stitches/react'
 import { useTable, useFilters, useSortBy, usePagination } from 'react-table'
-import { LoadingBar, Button, StyledDiv } from '@generates/swag'
+import { LoadingBar, Button, StyledEl } from '@generates/swag'
 import { merge } from '@generates/merger'
 import StyledTable from './styled/StyledTable.js'
 import StyledTableHeader from './styled/StyledTableHeader.js'
@@ -316,9 +316,9 @@ export default function Spreadsheet (props) {
                   colSpan={columns.length}
                   css={{ backgroundColor: 'transparent' }}
                 >
-                  <StyledDiv css={{ display: 'flex', alignItems: 'center' }}>
+                  <StyledEl css={{ display: 'flex', alignItems: 'center' }}>
 
-                    <StyledDiv css={{ flexShrink: 0 }}>
+                    <StyledEl css={{ flexShrink: 0 }}>
                       <Button
                         primary
                         small
@@ -330,10 +330,10 @@ export default function Spreadsheet (props) {
                       >
                         Add Row
                       </Button>
-                    </StyledDiv>
+                    </StyledEl>
 
                     {addedRows > 0 && (
-                      <StyledDiv
+                      <StyledEl
                         css={{
                           display: 'flex',
                           alignItems: 'center',
@@ -341,12 +341,12 @@ export default function Spreadsheet (props) {
                         }}
                       >
 
-                        <StyledDiv css={{
+                        <StyledEl css={{
                           fontSize: '.875em',
                           marginRight: '1em'
                         }}>
                           {addedRows} row(s) added
-                        </StyledDiv>
+                        </StyledEl>
 
                         <Button
                           small
@@ -373,10 +373,10 @@ export default function Spreadsheet (props) {
                           Save
                         </Button>
 
-                      </StyledDiv>
+                      </StyledEl>
                     )}
 
-                  </StyledDiv>
+                  </StyledEl>
                 </StyledTableHeader>
               </tr>
             )}

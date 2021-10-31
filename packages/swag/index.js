@@ -12,7 +12,7 @@ export { default as SelectField } from './components/fields/SelectField.js'
 export {
   default as StyledContainer
 } from './components/styled/StyledContainer.js'
-export { default as StyledDiv } from './components/styled/StyledDiv.js'
+export { default as StyledEl } from './components/styled/StyledEl.js'
 export { default as StyledSpan } from './components/styled/StyledSpan.js'
 export { default as StyledLink } from './components/styled/StyledLink.js'
 export { default as StyledLabel } from './components/styled/StyledLabel.js'
