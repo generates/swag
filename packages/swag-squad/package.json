@@ -21,7 +21,7 @@
     "@generates/swag": "^0.0.29"
   },
   "peerDependencies": {
-    "@stitches/react": "^0.2.5"
+    "@stitches/react": "^1.2.5"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.15.0",
