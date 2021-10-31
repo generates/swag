@@ -1,7 +1,7 @@
 import React from 'react'
-import { global } from '../stitches.js'
+import { globalCss } from '../stitches.js'
 
-const globalStyles = global({
+const globalStyles = globalCss({
   body: {
     backgroundColor: '#F3F4F6',
     fontSize: '16px',

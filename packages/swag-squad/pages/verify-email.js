@@ -1,10 +1,10 @@
 import React from 'react'
-import { styled, global } from '@generates/swag'
+import { styled, globalCss } from '@generates/swag'
 import { useForm } from 'react-hook-form'
 import Page from '../components/app/Page.js'
 import VerifyEmailForm from '../components/forms/VerifyEmailForm.js'
 
-const globalStyles = global({
+const globalStyles = globalCss({
   body: { backgroundColor: '#171717' }
 })
 const HeadingTwo = styled('h2')
