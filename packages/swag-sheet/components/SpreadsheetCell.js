@@ -76,7 +76,7 @@ export default function SpreadsheetCell (props) {
       }}
       {...props.cell.getCellProps()}
     >
-      {value}
+      {value || props.cell.render('Cell')}
     </StyledTableCell>
   )
 }

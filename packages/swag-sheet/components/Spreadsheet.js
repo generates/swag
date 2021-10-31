@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@stitches/react'
-import { useTable, useFilters, useSortBy, usePagination } from 'react-table'
+import { useTable, useFilters, useSortBy, usePagination, useRowSelect } from 'react-table'
 import { LoadingBar, Button, StyledDiv } from '@generates/swag'
 import { merge } from '@generates/merger'
 import StyledTable from './styled/StyledTable.js'
@@ -134,6 +134,7 @@ export default function Spreadsheet (props) {
     rows,
     prepareRow,
     setAllFilters,
+    selectedFlatRows,
     state: { pageIndex, pageSize, sortBy, filters }
   } = useTable(
     merge(
@@ -146,10 +147,11 @@ export default function Spreadsheet (props) {
     ),
     useFilters,
     useSortBy,
-    usePagination
+    usePagination,
+    useRowSelect
   )
 
-  const { onPageIndex, onPageSize, onSortBy, onFilter } = props
+  const { onPageIndex, onPageSize, onSortBy, onFilter, onRowIsSelected } = props
 
   React.useEffect(
     () => onPageIndex && !initialRender.current && onPageIndex(pageIndex),
@@ -180,6 +182,15 @@ export default function Spreadsheet (props) {
     [
       onFilter,
       filters
+    ]
+  )
+
+  React.useEffect(
+    () => onRowIsSelected && !initialRender.current && 
+      onRowIsSelected(selectedFlatRows.map(row => row.original)),
+    [
+      onRowIsSelected,
+      selectedFlatRows
     ]
   )
 
@@ -266,18 +277,19 @@ export default function Spreadsheet (props) {
                 >
                   {row.cells.map(cell => {
                     const { key, ...rest } = cell.getCellProps()
+                    const columnSelection = cell.column.id === 'Selection'
                     return (
                       <SpreadsheetCell
                         key={key}
                         id={key}
                         cell={cell}
                         styles={props.css?.tableCell}
-                        canEdit={canEdit}
+                        canEdit={!columnSelection && canEdit}
                         isSelected={selectedCell === key}
                         isFocused={focusedCell === key}
-                        onSelectCell={(evt, id) => setSelectedCell(id)}
-                        onFocusCell={(evt, id) => setFocusedCell(id)}
-                        onBlur={onBlur}
+                        onSelectCell={(evt, id) => !columnSelection && setSelectedCell(id)}
+                        onFocusCell={(evt, id) => !columnSelection && setFocusedCell(id)}
+                        onBlur={(evt) => !columnSelection && onBlur(evt)}
                         onEscape={onEscape}
                         onTab={onTab}
                         onShiftTab={onShiftTab}
