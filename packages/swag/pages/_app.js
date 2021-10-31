@@ -1,5 +1,5 @@
 import React from 'react'
-import { global } from '@stitches/react'
+import { global } from '../stitches.js'
 
 const globalStyles = global({
   body: {

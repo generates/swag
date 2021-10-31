@@ -1,6 +1,6 @@
 // import 'tailwindcss/tailwind.css'
 import React from 'react'
-import { global } from '@stitches/react'
+import { global } from '@generates/swag'
 
 const globalStyles = global({
   body: {

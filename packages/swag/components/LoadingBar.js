@@ -1,6 +1,6 @@
 import React from 'react'
 import { merge } from '@generates/merger'
-import { styled, keyframes } from '@stitches/react'
+import { styled, keyframes } from '../stitches.js'
 import transition from '../styles/transition.js'
 
 const Wrapper = styled(

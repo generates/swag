@@ -1,7 +1,7 @@
 import React from 'react'
 import { merge } from '@generates/merger'
 import { motion } from 'framer-motion'
-import { css as stitchesCss } from '@stitches/react'
+import { css as stitchesCss } from '../../stitches.js'
 import StyledEl from '../styled/StyledEl.js'
 import StyledLabel from '../styled/StyledLabel.js'
 

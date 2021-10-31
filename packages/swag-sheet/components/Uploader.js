@@ -1,7 +1,6 @@
 import React from 'react'
-import { styled } from '@stitches/react'
 import Papa from 'papaparse'
-import { LoadingBar, StyledEl } from '@generates/swag'
+import { styled, LoadingBar, StyledEl } from '@generates/swag'
 import { merge } from '@generates/merger'
 import Dropzone from 'react-dropzone'
 import Spreadsheet from './Spreadsheet.js'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from '@stitches/react'
+import { css } from '../stitches.js'
 import TextField from '../components/fields/TextField.js'
 import StyledContainer from '../components/styled/StyledContainer.js'
 import PasswordField from '../components/fields/PasswordField.js'

@@ -1,5 +1,5 @@
 import React from 'react'
-import { styled, global } from '@stitches/react'
+import { styled, global } from '@generates/swag'
 import { useForm } from 'react-hook-form'
 import Page from '../components/app/Page.js'
 import VerifyEmailForm from '../components/forms/VerifyEmailForm.js'

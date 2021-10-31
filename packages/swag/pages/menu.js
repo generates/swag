@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from '@stitches/react'
+import { css } from '../stitches.js'
 import {
   HiOutlineUserCircle
 } from 'react-icons/hi'

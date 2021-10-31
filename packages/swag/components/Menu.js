@@ -1,6 +1,6 @@
 import React from 'react'
 import { merge } from '@generates/merger'
-import { css } from '@stitches/react'
+import { css } from '../stitches.js'
 import {
   Popover
   // Transition

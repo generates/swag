@@ -1,5 +1,5 @@
 import { oneLine } from 'common-tags'
-import { styled } from '@stitches/react'
+import { styled } from '../../stitches.js'
 
 export default styled('select', {
   display: 'block',

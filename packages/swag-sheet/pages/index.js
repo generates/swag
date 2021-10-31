@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { styled } from '@stitches/react'
-import { StyledLink } from '@generates/swag'
+import { styled, StyledLink } from '@generates/swag'
 import Page from '../components/app/Page.js'
 
 const UnorderedList = styled('ul')

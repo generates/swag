@@ -1,3 +1,4 @@
+export * from './stitches.js'
 export { default as LoadingBar } from './components/LoadingBar.js'
 export { default as Alert } from './components/Alert.js'
 export { default as Button } from './components/buttons/Button.js'

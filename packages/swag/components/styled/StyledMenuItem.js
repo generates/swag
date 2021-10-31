@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react'
+import { styled } from '../../stitches.js'
 import Menu from '../../components/Menu.js'
 import transition from '../../styles/transition.js'
 

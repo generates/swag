@@ -1,6 +1,5 @@
 import React from 'react'
-import { styled } from '@stitches/react'
-import { StyledEl } from '@generates/swag'
+import { styled, StyledEl } from '@generates/swag'
 import { merge } from '@generates/merger'
 import { HiOutlineUserCircle } from 'react-icons/hi'
 

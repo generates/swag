@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react'
+import { styled } from '../../stitches.js'
 
 export default styled(
   'div',

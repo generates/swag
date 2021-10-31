@@ -1,7 +1,6 @@
 import React from 'react'
-import { styled } from '@stitches/react'
 import { useTable, useFilters, useSortBy, usePagination } from 'react-table'
-import { LoadingBar, Button, StyledEl } from '@generates/swag'
+import { styled, LoadingBar, Button, StyledEl } from '@generates/swag'
 import { merge } from '@generates/merger'
 import StyledTable from './styled/StyledTable.js'
 import StyledTableHeader from './styled/StyledTableHeader.js'

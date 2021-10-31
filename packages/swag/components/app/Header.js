@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { styled } from '@stitches/react'
+import { styled } from '../../stitches.js'
 import StyledLink from '../styled/StyledLink.js'
 
 const Header = styled('header')

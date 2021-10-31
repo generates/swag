@@ -1,7 +1,6 @@
 import React from 'react'
 import Fakerator from 'fakerator'
-import { css } from '@stitches/react'
-import { StyledContainer, Button, TextField } from '@generates/swag'
+import { css, StyledContainer, Button, TextField } from '@generates/swag'
 import useQueryParams from '@generates/use-query-params'
 import Spreadsheet from '../components/Spreadsheet.js'
 

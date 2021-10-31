@@ -1,6 +1,5 @@
 import React from 'react'
-import { styled } from '@stitches/react'
-import { StyledEl } from '@generates/swag'
+import { styled, StyledEl } from '@generates/swag'
 import Page from '../components/app/Page.js'
 import Avatar from '../components/Avatar.js'
 

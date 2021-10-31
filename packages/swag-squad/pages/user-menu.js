@@ -1,6 +1,5 @@
 import React from 'react'
-import { css, styled } from '@stitches/react'
-import { StyledEl, StyledMenuItem } from '@generates/swag'
+import { css, styled, StyledEl, StyledMenuItem } from '@generates/swag'
 import {
   HiOutlineUserCircle,
   HiOutlineAdjustments,
