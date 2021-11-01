@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react'
+import { styled } from '../../stitches.js'
 
 export default styled('input', {
   display: 'block',
@@ -11,17 +11,17 @@ export default styled('input', {
   paddingLeft: '.75em',
   paddingRight: '.75em',
   fontSize: '1.125em',
-  backgroundColor: '#FAFAFA',
-  color: '#262626',
+  backgroundColor: '$trueGray50',
+  color: '$trueGray800',
   borderRadius: '.375em',
   borderStyle: 'solid',
   borderWidth: '1px',
-  borderColor: '#D4D4D4',
+  borderColor: '$trueGray300',
   appearance: 'none',
   '&:focus': {
     outline: 'none',
-    borderColor: '#3B82F6',
-    boxShadow: '#BFDBFE 0px 0px 0px 3px'
+    borderColor: '$blue500',
+    boxShadow: '0px 0px 0px 3px $colors$blue200'
   },
   variants: {
     small: {
@@ -32,13 +32,13 @@ export default styled('input', {
         paddingLeft: '.5em',
         paddingRight: '.5em',
         '&:focus': {
-          boxShadow: '#BFDBFE 0px 0px 0px 2px'
+          boxShadow: '0px 0px 0px 2px $colors$blue200 '
         }
       }
     },
     level: {
       error: {
-        color: '#DC2626'
+        color: '$red600'
       }
     }
   }

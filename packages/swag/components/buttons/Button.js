@@ -1,4 +1,4 @@
-import { styled } from '@stitches/react'
+import { styled } from '../../stitches.js'
 import transition from '../../styles/transition.js'
 
 export default styled(
@@ -16,59 +16,71 @@ export default styled(
     cursor: 'pointer',
     userSelect: 'none',
     ...transition,
-    '&:focus': {
+    '&:focus, &:active': {
       outline: 'none'
     },
     variants: {
       secondary: {
         true: {
-          backgroundColor: '#E2E8F0',
+          backgroundColor: '$blueGray200',
           color: '#111827',
           '&:hover': {
-            background: '#CBD5E1'
+            background: '$blueGray300'
           },
-          '&:focus': {
-            background: '#CBD5E1',
-            boxShadow: '#E2E8F0 0px 0px 0px 2px, #CBD5E1 0px 0px 0px 3px'
+          '&:focus:not(:active)': {
+            background: '$blueGray300',
+            boxShadow: '0px 0px 0px 2px $colors$blueGray200, 0px 0px 0px 3px $colors$blueGray300'
+          },
+          '&:active': {
+            background: '$blueGray400'
           }
         }
       },
       primary: {
         true: {
-          backgroundColor: '#3B82F6',
+          backgroundColor: '$blue500',
           color: '#fff',
           '&:hover': {
-            background: '#2563EB'
+            background: '$blue600'
           },
-          '&:focus': {
-            background: '#2563EB',
-            boxShadow: '#BFDBFE 0px 0px 0px 2px, #60A5FA 0px 0px 0px 3px'
+          '&:focus:not(:active)': {
+            background: '$blue600',
+            boxShadow: '0px 0px 0px 2px $colors$blue200, 0px 0px 0px 3px $colors$blue300'
+          },
+          '&:active': {
+            background: '$blue700'
           }
         }
       },
       continue: {
         true: {
-          backgroundColor: '#22C55E',
+          backgroundColor: '$green500',
           color: '#fff',
           '&:hover': {
-            background: '#16A34A'
+            background: '$green600'
           },
-          '&:focus': {
-            background: '#16A34A',
-            boxShadow: '#BBF7D0 0px 0px 0px 2px, #4ADE80 0px 0px 0px 3px'
+          '&:focus:not(:active)': {
+            background: '$green600',
+            boxShadow: '0px 0px 0px 2px $colors$green200, 0px 0px 0px 3px $colors$green300'
+          },
+          '&:active': {
+            background: '$green700'
           }
         }
       },
       stop: {
         true: {
-          backgroundColor: '#F43F5E',
+          backgroundColor: '$red500',
           color: '#fff',
           '&:hover': {
-            background: '#E11D48'
+            background: '$red600'
           },
-          '&:focus': {
-            background: '#E11D48',
-            boxShadow: '#FECDD3 0px 0px 0px 2px, #FB7185 0px 0px 0px 3px'
+          '&:focus:not(:active)': {
+            background: '$red600',
+            boxShadow: '0px 0px 0px 2px $colors$red200, $colors$red300 0px 0px 0px 3px'
+          },
+          '&:active': {
+            background: '$red700'
           }
         }
       },
@@ -87,8 +99,8 @@ export default styled(
         small: true,
         secondary: true,
         css: {
-          '&:focus': {
-            boxShadow: '#94A3B8 0px 0px 0px 1px'
+          '&:focus:not(:active)': {
+            boxShadow: '0px 0px 0px 1px $colors$blueGray400'
           }
         }
       },
@@ -96,8 +108,8 @@ export default styled(
         small: true,
         primary: true,
         css: {
-          '&:focus': {
-            boxShadow: '#BFDBFE 0px 0px 0px 1px'
+          '&:focus:not(:active)': {
+            boxShadow: '0px 0px 0px 1px $colors$blue200'
           }
         }
       },
@@ -105,8 +117,8 @@ export default styled(
         small: true,
         continue: true,
         css: {
-          '&:focus': {
-            boxShadow: '#A7F3D0 0px 0px 0px 1px'
+          '&:focus:not(:active)': {
+            boxShadow: '0px 0px 0px 1px $colors$green200'
           }
         }
       }

@@ -1,10 +1,10 @@
 import React from 'react'
-import { css } from '@stitches/react'
+import { css } from '../stitches.js'
 import {
   HiOutlineUserCircle
 } from 'react-icons/hi'
+import Page from '../components/app/Page.js'
 import Menu from '../components/Menu.js'
-import StyledContainer from '../components/styled/StyledContainer.js'
 import StyledMenuItem from '../components/styled/StyledMenuItem.js'
 import Button from '../components/buttons/Button.js'
 
@@ -16,7 +16,7 @@ const navIcon = css({
 
 export default function MenuPage () {
   return (
-    <StyledContainer>
+    <Page>
 
       <h1>
         Menu
@@ -72,6 +72,6 @@ export default function MenuPage () {
 
       </div>
 
-    </StyledContainer>
+    </Page>
   )
 }

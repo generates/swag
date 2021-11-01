@@ -1,7 +1,7 @@
 import React from 'react'
-import { css } from '@stitches/react'
+import { css } from '../stitches.js'
+import Page from '../components/app/Page.js'
 import TextField from '../components/fields/TextField.js'
-import StyledContainer from '../components/styled/StyledContainer.js'
 import PasswordField from '../components/fields/PasswordField.js'
 import EmailField from '../components/fields/EmailField.js'
 import SwitchField from '../components/fields/SwitchField.js'
@@ -9,7 +9,7 @@ import StyledSelect from '../components/styled/StyledSelect.js'
 
 export default function FieldsPage () {
   return (
-    <StyledContainer>
+    <Page>
 
       <h1>
         Fields
@@ -125,6 +125,6 @@ export default function FieldsPage () {
 
       </div>
 
-    </StyledContainer>
+    </Page>
   )
 }

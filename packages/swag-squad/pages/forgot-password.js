@@ -1,5 +1,5 @@
 import React from 'react'
-import { styled } from '@stitches/react'
+import { styled } from '@generates/swag'
 import { useForm } from 'react-hook-form'
 import Page from '../components/app/Page.js'
 import ForgotPasswordForm from '../components/forms/ForgotPasswordForm.js'

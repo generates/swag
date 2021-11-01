@@ -1,6 +1,5 @@
 import React from 'react'
-import { styled } from '@stitches/react'
-import { StyledDiv } from '@generates/swag'
+import { styled, StyledEl } from '@generates/swag'
 import { merge } from '@generates/merger'
 import { HiOutlineUserCircle } from 'react-icons/hi'
 
@@ -28,11 +27,11 @@ export default function Avatar (props) {
   )
 
   return (
-    <StyledDiv css={container}>
+    <StyledEl css={container}>
       {props.image
         ? <StyledImage src={props.image} css={{ width: '100%' }} />
         : <HiOutlineUserCircle />
       }
-    </StyledDiv>
+    </StyledEl>
   )
 }

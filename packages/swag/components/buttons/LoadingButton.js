@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { merge } from '@generates/merger'
 import Button from './Button.js'
-import StyledDiv from '../styled/StyledDiv.js'
+import StyledEl from '../styled/StyledEl.js'
 import LoadingBar from '../LoadingBar.js'
 
 export default function LoadingButton (props) {
@@ -46,14 +46,14 @@ export default function LoadingButton (props) {
     <Button {...rest} css={button}>
       {isLoading
         ? (
-            <StyledDiv css={barWrapper}>
+            <StyledEl css={barWrapper}>
               <LoadingBar css={{ bar }} background={barBackground} />
-            </StyledDiv>
+            </StyledEl>
           )
         : (
-            <StyledDiv ref={ref}>
+            <StyledEl ref={ref}>
               {children}
-            </StyledDiv>
+            </StyledEl>
           )
       }
     </Button>

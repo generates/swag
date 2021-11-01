@@ -1,12 +1,12 @@
-import { styled } from '@stitches/react'
+import { styled } from '../../stitches.js'
 import transition from '../../styles/transition.js'
 
-export default styled('label', {
-  color: '#3B82F6',
+export default styled('a', {
+  color: '$blue500',
   cursor: 'pointer',
   textDecoration: 'underline',
   ...transition,
   '&:hover': {
-    color: '#2563EB'
+    color: '$blue600'
   }
 })

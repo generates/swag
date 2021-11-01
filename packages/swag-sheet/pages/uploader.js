@@ -1,6 +1,5 @@
 import React from 'react'
-import { css } from '@stitches/react'
-import { StyledContainer } from '@generates/swag'
+import { css, StyledContainer } from '@generates/swag'
 import Uploader from '../components/Uploader.js'
 
 export default function HomePage () {

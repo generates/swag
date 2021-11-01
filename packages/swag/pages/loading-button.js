@@ -1,7 +1,7 @@
 import React from 'react'
-import { css } from '@stitches/react'
+import { css } from '../stitches.js'
+import Page from '../components/app/Page.js'
 import LoadingButton from '../components/buttons/LoadingButton.js'
-import StyledContainer from '../components/styled/StyledContainer.js'
 
 export default function LoadingButtonPage () {
   const [isLoading, setIsLoading] = React.useState()
@@ -15,7 +15,7 @@ export default function LoadingButtonPage () {
   }
 
   return (
-    <StyledContainer>
+    <Page>
 
       <h1>
         LoadingButton
@@ -49,6 +49,6 @@ export default function LoadingButtonPage () {
 
       </div>
 
-    </StyledContainer>
+    </Page>
   )
 }

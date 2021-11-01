@@ -1,6 +1,5 @@
 import React from 'react'
-import { styled } from '@stitches/react'
-import { StyledDiv } from '@generates/swag'
+import { styled, StyledEl } from '@generates/swag'
 import Page from '../components/app/Page.js'
 import Avatar from '../components/Avatar.js'
 
@@ -18,13 +17,13 @@ export default function AvatarPage () {
 
       <br />
 
-      <StyledDiv css={{ marginTop: '1em' }}>
+      <StyledEl css={{ marginTop: '1em' }}>
         <Avatar name="Rick Flick" />
-      </StyledDiv>
+      </StyledEl>
 
-      <StyledDiv css={{ marginTop: '1em' }}>
+      <StyledEl css={{ marginTop: '1em' }}>
         <Avatar image="/img/avatar.jpeg" name="Dirk Lurk" />
-      </StyledDiv>
+      </StyledEl>
 
     </Page>
   )

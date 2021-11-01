@@ -1,21 +1,25 @@
 import React from 'react'
 import Link from 'next/link'
-import { styled } from '@stitches/react'
-import StyledContainer from '../components/styled/StyledContainer.js'
+import { styled } from '../stitches.js'
+import Page from '../components/app/Page.js'
+import StyledEl from '../components/styled/StyledEl.js'
+import textGradient from '../styles/textGradient.js'
 
 const UnorderedList = styled('ul')
 
 export default function Home () {
   return (
-    <StyledContainer>
+    <Page>
 
-      <h1>
-        Swag
-      </h1>
-
-      <div>
+      <StyledEl
+        css={{
+          textAlign: 'center',
+          fontSize: '1.5rem',
+          ...textGradient
+        }}
+      >
         A set of easily extensible React components
-      </div>
+      </StyledEl>
 
       <UnorderedList css={{
         '& li': {
@@ -67,6 +71,6 @@ export default function Home () {
         </li>
       </UnorderedList>
 
-    </StyledContainer>
+    </Page>
   )
 }

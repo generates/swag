@@ -1,6 +1,6 @@
 import React from 'react'
 import { merge } from '@generates/merger'
-import { styled, keyframes } from '@stitches/react'
+import { styled, keyframes } from '../stitches.js'
 import transition from '../styles/transition.js'
 
 const Wrapper = styled(
@@ -23,7 +23,7 @@ const Bar = styled(
     right: '-32px',
     top: '0',
     bottom: '0',
-    backgroundColor: '#F1F5F9',
+    backgroundColor: '$blueGray100',
     backgroundSize: '32px 32px',
     ...transition
   }
@@ -58,7 +58,7 @@ export default function LoadingBar (props) {
     },
     isEnabled
       ? {
-          backgroundColor: '#3B82F6',
+          backgroundColor: '$blue500',
           animationName: animation,
           animationDuration: '.25s',
           animationTimingFunction: 'linear',

@@ -1,6 +1,5 @@
 import React from 'react'
-import { styled } from '@stitches/react'
-import { Button } from '@generates/swag'
+import { styled, Button } from '@generates/swag'
 
 const Wrapper = styled(
   'div',

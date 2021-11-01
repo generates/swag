@@ -1,6 +1,5 @@
 import React from 'react'
-import { css, styled } from '@stitches/react'
-import { StyledDiv, StyledMenuItem } from '@generates/swag'
+import { css, styled, StyledEl, StyledMenuItem } from '@generates/swag'
 import {
   HiOutlineUserCircle,
   HiOutlineAdjustments,
@@ -15,7 +14,7 @@ const navIcon = css({ marginRight: '.5em', fontSize: '1.25em' })()
 
 function Nav () {
   return (
-    <StyledDiv css={{ display: 'grid' }}>
+    <StyledEl css={{ display: 'grid' }}>
 
       <StyledMenuItem>
 
@@ -49,7 +48,7 @@ function Nav () {
 
       </StyledMenuItem>
 
-    </StyledDiv>
+    </StyledEl>
   )
 }
 
@@ -65,7 +64,7 @@ export default function UserMenuPage () {
 
       <br />
 
-      <StyledDiv
+      <StyledEl
         css={{
           display: 'flex',
           backgroundColor: '#171717',
@@ -83,9 +82,9 @@ export default function UserMenuPage () {
         >
           <Nav />
         </UserMenu>
-      </StyledDiv>
+      </StyledEl>
 
-      <StyledDiv
+      <StyledEl
         css={{
           display: 'flex',
           marginLeft: 'auto',
@@ -100,9 +99,9 @@ export default function UserMenuPage () {
         >
           <Nav />
         </UserMenu>
-      </StyledDiv>
+      </StyledEl>
 
-      <StyledDiv
+      <StyledEl
         css={{
           display: 'flex',
           marginLeft: 'auto',
@@ -118,7 +117,7 @@ export default function UserMenuPage () {
         >
           <Nav />
         </UserMenu>
-      </StyledDiv>
+      </StyledEl>
 
     </Page>
   )

@@ -1,12 +1,12 @@
 import React from 'react'
-import StyledDiv from './styled/StyledDiv.js'
+import StyledEl from './styled/StyledEl.js'
 
 export default function Feedback (props) {
   return (
-    <StyledDiv
+    <StyledEl
       id={props.id}
       css={{
-        color: '#DC2626',
+        color: '$red600',
         marginTop: '.5em',
         marginBottom: '.5em',
         fontSize: '.925em',
@@ -15,12 +15,12 @@ export default function Feedback (props) {
     >
       {Array.isArray(props.feedback)
         ? props.feedback.map((feedback, i) => (
-          <StyledDiv key={i} css={{ marginTop: '.5em', marginBottom: '.5em' }}>
+          <StyledEl key={i} css={{ marginTop: '.5em', marginBottom: '.5em' }}>
             {feedback}
-          </StyledDiv>
+          </StyledEl>
         ))
         : props.feedback
       }
-    </StyledDiv>
+    </StyledEl>
   )
 }

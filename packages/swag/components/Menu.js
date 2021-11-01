@@ -1,13 +1,13 @@
 import React from 'react'
 import { merge } from '@generates/merger'
-import { css } from '@stitches/react'
+import { css } from '../stitches.js'
 import {
   Popover
   // Transition
 } from '@headlessui/react'
 import { usePopper } from 'react-popper'
 import Button from './buttons/Button.js'
-import StyledDiv from './styled/StyledDiv.js'
+import StyledEl from './styled/StyledEl.js'
 
 export default function Menu (props) {
   const [referenceElement, setReferenceElement] = React.useState()
@@ -28,7 +28,7 @@ export default function Menu (props) {
           {
             zIndex: 10,
             overflow: 'hidden',
-            backgroundColor: '#FAFAFA',
+            backgroundColor: '$gray50',
             borderRadius: '.375em',
             width: '192px',
             boxShadow: `
@@ -43,7 +43,7 @@ export default function Menu (props) {
           <>
 
             <Popover.Button
-              as={props.trigger === 'string' ? Button : StyledDiv}
+              as={props.trigger === 'string' ? Button : StyledEl}
               ref={setReferenceElement}
               css={merge({ cursor: 'pointer' }, props.css?.button)}
               {...props.button}

@@ -1,7 +1,6 @@
 import React from 'react'
-import { styled } from '@stitches/react'
 import Papa from 'papaparse'
-import { LoadingBar, StyledDiv } from '@generates/swag'
+import { styled, LoadingBar, StyledEl } from '@generates/swag'
 import { merge } from '@generates/merger'
 import Dropzone from 'react-dropzone'
 import Spreadsheet from './Spreadsheet.js'
@@ -73,10 +72,10 @@ export default function Uploader (props) {
 
         {/* File input */}
 
-        <StyledDiv css={{ flexGrow: '1' }}>
+        <StyledEl css={{ flexGrow: '1' }}>
           <Dropzone onDrop={handleFile}>
             {({ getRootProps, getInputProps }) => (
-              <StyledDiv
+              <StyledEl
                 css={{
                   cursor: 'pointer',
                   borderWidth: '2px',
@@ -102,10 +101,10 @@ export default function Uploader (props) {
                   </>
                 )}
 
-              </StyledDiv>
+              </StyledEl>
             )}
           </Dropzone>
-        </StyledDiv>
+        </StyledEl>
 
         {/* Action menu */}
 

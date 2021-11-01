@@ -4,7 +4,7 @@ import {
   PasswordField,
   StyledLabel,
   LoadingButton,
-  StyledSpan,
+  StyledEl,
   TextField
 } from '@generates/swag'
 import StyledForm from '../styled/StyledForm.js'
@@ -49,9 +49,9 @@ export default function ResetPasswordForm (props) {
 
             Password
 
-            <StyledSpan css={{ marginLeft: '.5em', color: '#6B7280' }}>
+            <StyledEl as="span" css={{ marginLeft: '.5em', color: '#6B7280' }}>
               (confirm)
-            </StyledSpan>
+            </StyledEl>
 
           </StyledLabel>
         }
