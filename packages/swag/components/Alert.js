@@ -1,7 +1,6 @@
 import React from 'react'
 import { HiX } from 'react-icons/hi'
 import StyledEl from './styled/StyledEl.js'
-import StyledButton from './styled/StyledButton.js'
 import transition from '../styles/transition.js'
 
 const scrollOptions = { behavior: 'smooth', block: 'end', inline: 'nearest' }
@@ -55,7 +54,8 @@ export default function Alert (props) {
 
       {props.onClose && (
         <StyledEl css={{ marginLeft: 'auto' }}>
-          <StyledButton
+          <StyledEl
+            as="button"
             type="button"
             css={{
               display: 'inline-flex',
@@ -93,7 +93,7 @@ export default function Alert (props) {
             onClick={props.onClose}
           >
             <HiX aria-hidden="true" />
-          </StyledButton>
+          </StyledEl>
         </StyledEl>
       )}
 

@@ -18,10 +18,10 @@ export default function TextField (props) {
   const input = merge(
     {
       ...feedback && {
-        borderColor: '#EF4444',
+        borderColor: '$red500',
         '&:focus': {
-          borderColor: '#EF4444',
-          boxShadow: '#FECACA 0px 0px 0px 3px'
+          borderColor: '$red500',
+          boxShadow: '$red200 0px 0px 0px 3px'
         }
       }
     },

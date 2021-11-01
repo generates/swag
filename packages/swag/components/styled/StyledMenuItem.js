@@ -17,11 +17,11 @@ export default styled(
     paddingBottom: '.75em',
     fontSize: '.825em',
     fontWeight: '500',
-    color: '#4B5563',
+    color: '$coolGray600',
     ...transition,
     '&:hover': {
-      backgroundColor: '#E5E5E5',
-      color: '#111827'
+      backgroundColor: '$coolGray200',
+      color: '$coolGray900'
     }
   }
 )

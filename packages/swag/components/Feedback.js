@@ -6,7 +6,7 @@ export default function Feedback (props) {
     <StyledEl
       id={props.id}
       css={{
-        color: '#DC2626',
+        color: '$red600',
         marginTop: '.5em',
         marginBottom: '.5em',
         fontSize: '.925em',

@@ -12,12 +12,12 @@ export default styled('select', {
   paddingLeft: '.75em',
   paddingRight: '2.25em',
   fontSize: '1.125em',
-  backgroundColor: '#FAFAFA',
+  backgroundColor: '$trueGray50',
   color: '#262626',
   borderRadius: '.375em',
   borderStyle: 'solid',
   borderWidth: '1px',
-  borderColor: '#D4D4D4',
+  borderColor: '$trueGray300',
   appearance: 'none',
   backgroundImage: oneLine`
     url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23A3A3A3' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")
@@ -27,8 +27,8 @@ export default styled('select', {
   backgroundSize: '1.5em 1.5em',
   '&:focus': {
     outline: 'none',
-    borderColor: '#3B82F6',
-    boxShadow: '#BFDBFE 0px 0px 0px 3px'
+    borderColor: '$blue500',
+    boxShadow: '$blue200 0px 0px 0px 3px'
   },
   variants: {
     small: {
@@ -40,13 +40,13 @@ export default styled('select', {
         paddingRight: '1.825em',
         backgroundPosition: 'right .15rem center',
         '&:focus': {
-          boxShadow: '#BFDBFE 0px 0px 0px 2px'
+          boxShadow: '$blue200 0px 0px 0px 2px'
         }
       }
     },
     level: {
       error: {
-        color: '#DC2626'
+        color: '$red600'
       }
     }
   }

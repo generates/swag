@@ -23,7 +23,7 @@ export default function SwitchField (props) {
       flexShrink: 0,
       cursor: 'pointer',
       alignItems: 'center',
-      backgroundColor: '#E2E8F0',
+      backgroundColor: '$blueGray200',
       height: '32px',
       width: '56px',
       paddingLeft: '4px',
@@ -37,7 +37,7 @@ export default function SwitchField (props) {
     {
       height: '24px',
       width: '24px',
-      backgroundColor: '#fff',
+      backgroundColor: '$white',
       borderRadius: '100%',
       boxShadow: '1px 2px 0 rgba(0,0,0,0.05)'
     },
@@ -58,7 +58,7 @@ export default function SwitchField (props) {
       <motion.div
         initial={false}
         className={body()}
-        animate={{ backgroundColor: isOn ? '#22C55E' : '#E2E8F0' }}
+        animate={{ backgroundColor: isOn ? '$green500' : '$blueGray200' }}
       >
         <motion.div
           initial={false}

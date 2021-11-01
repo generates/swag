@@ -14,7 +14,6 @@ export {
   default as StyledContainer
 } from './components/styled/StyledContainer.js'
 export { default as StyledEl } from './components/styled/StyledEl.js'
-export { default as StyledSpan } from './components/styled/StyledSpan.js'
 export { default as StyledLink } from './components/styled/StyledLink.js'
 export { default as StyledLabel } from './components/styled/StyledLabel.js'
 export { default as StyledInput } from './components/styled/StyledInput.js'
