@@ -18,25 +18,25 @@ export default function Alert (props) {
     fontSize: '1.125em',
     lineHeight: '1.5em',
     ...props.level === 'success' && {
-      backgroundColor: '#ECFDF5',
-      color: '#059669',
+      backgroundColor: '$emerald50',
+      color: '$emerald600',
       borderWidth: '1px',
       borderStyle: 'solid',
-      borderColor: '#10B981'
+      borderColor: '$emerald500'
     },
     ...props.level === 'error' && {
-      backgroundColor: '#FEF2F2',
-      color: '#DC2626',
+      backgroundColor: '$red50',
+      color: '$red600',
       borderWidth: '1px',
       borderStyle: 'solid',
-      borderColor: '#EF4444'
+      borderColor: '$red500'
     },
     ...props.level === 'info' && {
-      backgroundColor: '#EFF6FF',
-      color: '#2563EB',
+      backgroundColor: '$blue50',
+      color: '$blue600',
       borderWidth: '1px',
       borderStyle: 'solid',
-      borderColor: '#3B82F6'
+      borderColor: '$blue500'
     },
     ...props.css
   }
@@ -68,21 +68,21 @@ export default function Alert (props) {
               border: 'none',
               cursor: 'pointer',
               ...props.level === 'success' && {
-                color: '#059669',
+                color: '$emerald600',
                 '&:hover': {
-                  backgroundColor: '#D1FAE5'
+                  backgroundColor: '$emerald100'
                 }
               },
               ...props.level === 'error' && {
-                color: '#DC2626',
+                color: '$red600',
                 '&:hover': {
-                  backgroundColor: '#FEE2E2'
+                  backgroundColor: '$red100'
                 }
               },
               ...props.level === 'info' && {
-                color: '#2563EB',
+                color: '$blue600',
                 '&:hover': {
-                  backgroundColor: '#DBEAFE'
+                  backgroundColor: '$blue100'
                 }
               },
               ...transition,
