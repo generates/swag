@@ -45,7 +45,7 @@ export default styled(
           },
           '&:focus:not(:active)': {
             background: '$blue600',
-            boxShadow: '$0px 0px 0px 2px $colors$blue200, 0px 0px 0px 3px $colors$blue300'
+            boxShadow: '0px 0px 0px 2px $colors$blue200, 0px 0px 0px 3px $colors$blue300'
           },
           '&:active': {
             background: '$blue700'
