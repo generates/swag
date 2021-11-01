@@ -58,7 +58,7 @@ export default function SwitchField (props) {
       <motion.div
         initial={false}
         className={body()}
-        animate={{ backgroundColor: isOn ? '$green500' : '$blueGray200' }}
+        animate={{ backgroundColor: isOn ? '#22C55E' : '#E2E8F0' }}
       >
         <motion.div
           initial={false}

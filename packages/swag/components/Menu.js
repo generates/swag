@@ -28,7 +28,7 @@ export default function Menu (props) {
           {
             zIndex: 10,
             overflow: 'hidden',
-            backgroundColor: '#FAFAFA',
+            backgroundColor: '$gray50',
             borderRadius: '.375em',
             width: '192px',
             boxShadow: `
