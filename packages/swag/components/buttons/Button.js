@@ -29,9 +29,9 @@ export default styled(
           },
           '&:focus:not(:active)': {
             background: '$blueGray300',
-            boxShadow: '$blueGray200 0px 0px 0px 2px, $blueGray300 0px 0px 0px 3px'
+            boxShadow: '0px 0px 0px 2px $colors$blueGray200, 0px 0px 0px 3px $colors$blueGray300'
           },
-          '&:focus:active': {
+          '&:active': {
             background: '$blueGray400'
           }
         }
@@ -45,9 +45,9 @@ export default styled(
           },
           '&:focus:not(:active)': {
             background: '$blue600',
-            boxShadow: '$blue200 0px 0px 0px 2px, $blue300 0px 0px 0px 3px'
+            boxShadow: '$0px 0px 0px 2px $colors$blue200, 0px 0px 0px 3px $colors$blue300'
           },
-          '&:focus:active': {
+          '&:active': {
             background: '$blue700'
           }
         }
@@ -61,9 +61,9 @@ export default styled(
           },
           '&:focus:not(:active)': {
             background: '$green600',
-            boxShadow: '$green200 0px 0px 0px 2px, $green300 0px 0px 0px 3px'
+            boxShadow: '0px 0px 0px 2px $colors$green200, 0px 0px 0px 3px $colors$green300'
           },
-          '&:focus:active': {
+          '&:active': {
             background: '$green700'
           }
         }
@@ -77,9 +77,9 @@ export default styled(
           },
           '&:focus:not(:active)': {
             background: '$red600',
-            boxShadow: '$red200 0px 0px 0px 2px, $red300 0px 0px 0px 3px'
+            boxShadow: '0px 0px 0px 2px $colors$red200, $colors$red300 0px 0px 0px 3px'
           },
-          '&:focus:active': {
+          '&:active': {
             background: '$red700'
           }
         }
@@ -100,7 +100,7 @@ export default styled(
         secondary: true,
         css: {
           '&:focus:not(:active)': {
-            boxShadow: '$blueGray400 0px 0px 0px 1px'
+            boxShadow: '0px 0px 0px 1px $colors$blueGray400'
           }
         }
       },
@@ -109,7 +109,7 @@ export default styled(
         primary: true,
         css: {
           '&:focus:not(:active)': {
-            boxShadow: '$blue200 0px 0px 0px 1px'
+            boxShadow: '0px 0px 0px 1px $colors$blue200'
           }
         }
       },
@@ -118,7 +118,7 @@ export default styled(
         continue: true,
         css: {
           '&:focus:not(:active)': {
-            boxShadow: '$green200 0px 0px 0px 1px'
+            boxShadow: '0px 0px 0px 1px $colors$green200'
           }
         }
       }

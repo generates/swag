@@ -28,7 +28,7 @@ export default styled('select', {
   '&:focus': {
     outline: 'none',
     borderColor: '$blue500',
-    boxShadow: '$blue200 0px 0px 0px 3px'
+    boxShadow: '0px 0px 0px 3px $colors$blue200 '
   },
   variants: {
     small: {
@@ -40,7 +40,7 @@ export default styled('select', {
         paddingRight: '1.825em',
         backgroundPosition: 'right .15rem center',
         '&:focus': {
-          boxShadow: '$blue200 0px 0px 0px 2px'
+          boxShadow: '0px 0px 0px 2px $colors$blue200'
         }
       }
     },

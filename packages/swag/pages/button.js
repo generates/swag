@@ -1,13 +1,13 @@
 import React from 'react'
 import { css } from '../stitches.js'
 import Button from '../components/buttons/Button.js'
-import StyledContainer from '../components/styled/StyledContainer.js'
+import Page from '../components/app/Page.js'
 
 export default function ButtonPage () {
   const [isHidden, setIsHidden] = React.useState(true)
 
   return (
-    <StyledContainer>
+    <Page>
 
       <h1>
         Button
@@ -83,6 +83,6 @@ export default function ButtonPage () {
 
       </div>
 
-    </StyledContainer>
+    </Page>
   )
 }

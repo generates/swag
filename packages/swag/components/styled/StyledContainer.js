@@ -6,6 +6,6 @@ export default styled(
     maxWidth: '1280px',
     marginRight: 'auto',
     marginLeft: 'auto',
-    padding: '20px'
+    px: '20px'
   }
 )

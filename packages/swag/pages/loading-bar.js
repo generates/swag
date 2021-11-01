@@ -1,13 +1,13 @@
 import React from 'react'
 import { css } from '../stitches.js'
+import Page from '../components/app/Page.js'
 import LoadingBar from '../components/LoadingBar.js'
-import StyledContainer from '../components/styled/StyledContainer.js'
 import Button from '../components/buttons/Button.js'
 
 export default function LoadingBarPage () {
   const [isEnabled, setIsEnabled] = React.useState(true)
   return (
-    <StyledContainer>
+    <Page>
 
       <h1>
         LoadingBar
@@ -23,6 +23,6 @@ export default function LoadingBarPage () {
         </Button>
       </div>
 
-    </StyledContainer>
+    </Page>
   )
 }

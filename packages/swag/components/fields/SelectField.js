@@ -21,7 +21,7 @@ export default function SelectField (props) {
         borderColor: '$red500',
         '&:focus': {
           borderColor: '$red500',
-          boxShadow: '$red200 0px 0px 0px 3px'
+          boxShadow: '0px 0px 0px 3px $colors$red200'
         }
       }
     },
