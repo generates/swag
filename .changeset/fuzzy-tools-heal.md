@@ -1,7 +1,7 @@
 ---
 "@generates/swag": major
-"@generates/swag-sheet": major
-"@generates/swag-squad": major
+"@generates/swag-sheet": patch
+"@generates/swag-squad": patch
 ---
 
 Renaming StyledDiv to StyledEl
