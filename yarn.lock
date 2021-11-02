@@ -1643,10 +1643,10 @@
   resolved "https://registry.yarnpkg.com/@generates/number-lines/-/number-lines-0.0.1.tgz#794a6899d2c7180e953477cf46243880a818b210"
   integrity sha512-oTVUBNkvqjue0A6vypGr3Vx2fqBbgSAOx6KS0rsNeUNrUxGb/n15SRC+XSE3AAul8X096vblfBifGqRrBsAlCQ==
 
-"@generates/use-query-params@^1.0.12":
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/@generates/use-query-params/-/use-query-params-1.0.12.tgz#834fc51936c242a2f12be2c1d9cd9e4f92b45c42"
-  integrity sha512-FI94N2P+E9c+YNE+p1dQJyeo2SNzLvZQMEOEFvWVeYIj6y6w+d8NfdYlMChudS3HBL2TX2mx/ayOYAdVL3v3eg==
+"@generates/use-query-params@^1.0.13":
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/@generates/use-query-params/-/use-query-params-1.0.13.tgz#b9fbf2579b2bfadbb33d28ab75cc46b30308fbf2"
+  integrity sha512-53aJnUcviH53l32IhfNf7OTIwqqRFmmt/1LSUZjhegaworhxe3jbUE8gsFi3VOHqlDBt8W1SD45/AhgMAxMsDw==
 
 "@hapi/accept@5.0.2":
   version "5.0.2"

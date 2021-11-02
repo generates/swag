@@ -56,7 +56,7 @@
     "@babel/preset-react": "^7.16.0",
     "@changesets/cli": "^2.17.0",
     "@generates/modulizer": "^8.0.5",
-    "@generates/use-query-params": "^1.0.12",
+    "@generates/use-query-params": "^1.0.13",
     "fakerator": "^0.3.3",
     "next": "^11.1.0",
     "papaparse": "^5.3.1",
