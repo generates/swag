@@ -46,7 +46,7 @@
   },
   "optionalDependencies": {
     "@headlessui/react": "^1.3.0",
-    "@popperjs/core": "^2.9.3",
+    "@popperjs/core": "^2.10.2",
     "framer-motion": "^4.1.17",
     "react-icons": "^4.3.1",
     "react-popper": "^2.2.5"
@@ -60,7 +60,7 @@
     "@changesets/cli": "^2.17.0",
     "@generates/modulizer": "^8.0.5",
     "@headlessui/react": "^1.3.0",
-    "@popperjs/core": "^2.9.3",
+    "@popperjs/core": "^2.10.2",
     "@stitches/react": "^1.2.5",
     "framer-motion": "^4.1.17",
     "next": "^12.0.2",
