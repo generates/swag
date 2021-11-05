@@ -1,5 +1,12 @@
 # @generates/swag
 
+## 1.0.0
+
+### Major Changes
+
+- 11f15e6: Renaming StyledDiv to StyledEl
+- c4df087: Updating stitches to 1.2.5
+
 ## 0.0.29
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @generates/swag-sheet
 
+## 0.0.49
+
+### Patch Changes
+
+- 11f15e6: Renaming StyledDiv to StyledEl
+- c4df087: Updating stitches to 1.2.5
+- c40a1a1: Update dependency react-dropzone to ^11.4.2
+- Updated dependencies [11f15e6]
+- Updated dependencies [c4df087]
+  - @generates/swag@1.0.0
+
 ## 0.0.48
 
 ### Patch Changes
