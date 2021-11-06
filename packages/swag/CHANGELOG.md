@@ -1,5 +1,11 @@
 # @generates/swag
 
+## 1.1.0
+
+### Minor Changes
+
+- a4e0e34: Adding breakpoints
+
 ## 1.0.0
 
 ### Major Changes
