@@ -260,7 +260,11 @@ export const {
     }
   },
   media: {
-    // bp1: '(min-width: 480px)'
+    xs: '(min-width: 640px)',
+    sm: '(min-width: 768px)',
+    md: '(min-width: 1024px)',
+    lg: '(min-width: 1280px)',
+    xl: '(min-width: 1536px)'
   },
   utils: {
     mx: value => ({ marginLeft: value, marginRight: value }),
