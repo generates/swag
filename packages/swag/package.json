@@ -45,7 +45,7 @@
     "common-tags": "^1.8.1"
   },
   "optionalDependencies": {
-    "@headlessui/react": "^1.4.1",
+    "@headlessui/react": "^1.4.2",
     "@popperjs/core": "^2.10.2",
     "framer-motion": "^4.1.17",
     "react-icons": "^4.3.1",
@@ -59,7 +59,7 @@
     "@babel/preset-react": "^7.16.0",
     "@changesets/cli": "^2.18.0",
     "@generates/modulizer": "^8.0.5",
-    "@headlessui/react": "^1.4.1",
+    "@headlessui/react": "^1.4.2",
     "@popperjs/core": "^2.10.2",
     "@stitches/react": "^1.2.5",
     "framer-motion": "^4.1.17",
