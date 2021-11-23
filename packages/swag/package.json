@@ -58,7 +58,7 @@
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.16.0",
     "@changesets/cli": "^2.18.0",
-    "@generates/modulizer": "^8.0.5",
+    "@generates/modulizer": "^8.0.6",
     "@headlessui/react": "^1.4.2",
     "@popperjs/core": "^2.10.2",
     "@stitches/react": "^1.2.5",
