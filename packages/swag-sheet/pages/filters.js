@@ -25,7 +25,7 @@ const initialData = [
 const faker = Fakerator()
 
 function toFilter (filter) {
-  const [id, value] = filter?.split(':')
+  const [id, value] = filter?.split(':') || []
   return { id, value }
 }
 function toFilterString (filter) {
