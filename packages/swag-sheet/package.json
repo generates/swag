@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "@changesets/cli": "^2.18.0",
     "@generates/modulizer": "^8.0.7",
