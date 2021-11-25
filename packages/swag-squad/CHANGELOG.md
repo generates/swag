@@ -1,5 +1,14 @@
 # @generates/swag-squad
 
+## 0.0.34
+
+### Patch Changes
+
+- 509b1e4: Update dependency react-hook-form to ^7.20.2
+- Updated dependencies [164ab92]
+- Updated dependencies [8f66adc]
+  - @generates/swag@1.1.1
+
 ## 0.0.33
 
 ### Patch Changes
