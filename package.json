@@ -10,7 +10,7 @@
   ],
   "devDependencies": {
     "@changesets/cli": "^2.18.0",
-    "@ianwalter/eslint-config-react": "^4.1.0",
+    "@ianwalter/eslint-config-react": "^5.1.1",
     "@ianwalter/renovate-config": "^1.4.6",
     "ultra-runner": "^3.10.5"
   },
