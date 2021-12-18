@@ -69,6 +69,13 @@ export default function Home () {
             </a>
           </Link>
         </li>
+        <li>
+          <Link href="/modal">
+            <a>
+              Modal
+            </a>
+          </Link>
+        </li>
       </UnorderedList>
 
     </Page>
