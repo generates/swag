@@ -54,7 +54,7 @@
     "@babel/core": "^7.16.5",
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
-    "@changesets/cli": "^2.18.1",
+    "@changesets/cli": "^2.19.0",
     "@generates/modulizer": "^8.0.7",
     "@generates/use-query-params": "^1.0.13",
     "fakerator": "^0.3.4",
