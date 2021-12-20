@@ -1,5 +1,12 @@
 # @generates/swag
 
+## 1.1.1
+
+### Patch Changes
+
+- 164ab92: Update dependency common-tags to ^1.8.2
+- 8f66adc: Update dependency common-tags to ^1.8.1
+
 ## 1.1.0
 
 ### Minor Changes
