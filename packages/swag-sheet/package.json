@@ -44,7 +44,7 @@
   "dependencies": {
     "@generates/merger": "^0.1.3",
     "@generates/swag": "^1.0.0",
-    "react-dropzone": "^11.4.2"
+    "react-dropzone": "^12.0.5"
   },
   "peerDependencies": {
     "papaparse": "^5.3.1",
