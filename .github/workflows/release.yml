@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: yarn build
       - name: Changesets
-        uses: changesets/action@37c2edd85bf5f2aa8edb44ce4ea00eb4a55aa9d4
+        uses: changesets/action@6a46d2c28377497e64763ba5f1faeabbd3d88c33
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
